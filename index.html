@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,50 +15,118 @@
 </head>
 <body>
 
+    <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *;">
+    
+        <nav class="uk-navbar-container uk-light">
+            <div class="uk-container uk-container-expand">
+                <div uk-navbar>
 
-    <div class="uk-section hero_section uk-background-cover uk-preserve-color">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
 
-        <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *; offset: 80">
-    
-            <nav class="uk-navbar-container uk-light">
-                <div class="uk-container uk-container-expand">
-                    <div uk-navbar>
-    
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-    
-                    </div>
                 </div>
-            </nav>
-        </div>
-    
-        <div class="uk-section uk-light">
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="hero_section">
 
                 <div class="hero_section_top">
                     <div class="hero_left_side">
-                        <h2>Together for a Brighter Tomorrow</h2>
+                        <h2>Together for a</h2>
+                        <h2>Brighter</h2>
+                        <h2>Tomorrow</h2>
                     </div>
     
                     <div class="hero_right_side">
-                        <div class="raj_mask"></div>
+                        <div class="map_mask">
+                            
+                        </div>
                     </div>
                 </div>
-        </div>
-    
-    </div>
 
+    
+    </section>
+
+
+    <section class="featur_section">
+
+        <div class="feture_wraper">
+
+            <div class="feture_card">
+                <div class="feture_content">
+                    <div class="feture_card_img">
+                        <img src="./img/icon/poverty.svg" alt="">
+                    </div>
+                    <div class="feture_card_texts">
+                        <div class="feture_card_heading">
+                            <h2>Relief for Poverty</h2>
+                            <p>Providing essential resources and support to alleviate poverty-stricken communities, fostering sustainable development and empowerment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="feture_card">
+                <div class="feture_content">
+                    <div class="feture_card_img">
+                        <img src="./img/icon/books.svg" alt="">
+                    </div>
+                    <div class="feture_card_texts">
+                        <div class="feture_card_heading">
+                            <h2>Education Initiatives</h2>
+                            <p>Implementing educational programs aimed at enhancing knowledge, skills, and opportunities for underprivileged individuals, paving the way for a brighter future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="feture_card">
+                <div class="feture_content">
+                    <div class="feture_card_img">
+                        <img src="./img/icon/hospital.svg" alt="">
+                    </div>
+                    <div class="feture_card_texts">
+                        <div class="feture_card_heading">
+                            <h2>Medical Facilities</h2>
+                            <p>Ensuring access to quality healthcare services, promoting well-being and addressing healthcare disparities within vulnerable populations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feture_card">
+                <div class="feture_content">
+                    <div class="feture_card_img">
+                        <img src="./img/icon/hospital.svg" alt="">
+                    </div>
+                    <div class="feture_card_texts">
+                        <div class="feture_card_heading">
+                            <h2>Civil Society Reformation</h2>
+                            <p>Advocating for societal progress through the adoption of scientific and modern principles, fostering a culture of inclusivity, equity, and progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 
 
