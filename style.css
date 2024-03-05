@@ -1,0 +1,47 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.hero_section
+{
+    padding: 0;
+    height: 100vh;
+    background-image: url('./img/hero_bg.png');
+    border-image: fill 0 linear-gradient(#0003, #000);
+    background-size: cover;
+}
+
+.hero_section_top
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hero_left_side
+{
+    width: 40%;
+}
+
+.hero_right_side
+{
+    width: 60%;
+    height: 60vh;
+}
+
+.raj_mask
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/two_child.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask-image: url('./img/rajmap.png');
+    mask-repeat: no-repeat;
+}
