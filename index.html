@@ -12,6 +12,9 @@
 
 <link rel="stylesheet" href="./style.css">
 
+
+
+
 </head>
 <body>
 
@@ -23,11 +26,11 @@
                 <div class="uk-container">
                     <div uk-navbar>
                         <div class="uk-navbar-left">
-                            <div class="logo">
-                                <a href="./index.html">
-                                    <img src="./img/logo.jpg" alt="">
-                                </a>
-                                <p>“Special Consultative Status” with the Economic & Social Council Of UNITED NATIONS Since 2017</p>
+                            <div class="two_pics">
+
+                                <img src="./img/Photo Buddh Vihar Jaipahari.jpg" alt="">
+                                <img src="./img/budh_anime.png" alt="">
+                                
                             </div>
                         </div>
                         <div class="uk-navbar-center">
@@ -90,55 +93,75 @@
             <div class="uk-container uk-container-expand">
                 <div uk-navbar>
 
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+                    <div class="uk-navbar-center">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+
+                    </div>
+
+                  
 
                 </div>
             </div>
         </nav>
+
+
+
+
+
+
     </div>
 
 
     <section class="hero_section">
 
-                <div class="hero_section_top">
-                    <div class="hero_left_side">
-                        <h2>Together for a</h2>
-                        <h2>Brighter</h2>
-                        <h2>Tomorrow</h2>
-                    </div>
-    
-                    <div class="hero_right_side">
-                        <div class="map_mask">
-                            
-                        </div>
-                    </div>
+        <div class="hero_section_top">
+            <div class="hero_left_side">
+                <h2>Together for a</h2>
+                <h2>Brighter</h2>
+                <h2>Tomorrow</h2>
+            </div>
+
+            <div class="hero_right_side">
+                <div class="map_mask">
+                    
                 </div>
+            </div>
+        </div>
 
-    
-    </section>
+
+</section>
 
 
-    <section class="featur_section">
+<section class="featur_section">
 
+    <div class="feture_title">
+        <h2>Make a Difference</h2>
+    </div>
+    <div class="feture_sub_title">
+        <p>Path to Enligtnment by helping others and making a better persons for better tommow</p>
+    </div>
+
+    <div class="feture_container">
         <div class="feture_wraper">
 
             <div class="feture_card">
                 <div class="feture_content">
                     <div class="feture_card_img">
-                        <img src="./img/icon/poverty.svg" alt="">
+                        <img src="./img/icon/no-poverty.svg" alt="">
                     </div>
                     <div class="feture_card_texts">
                         <div class="feture_card_heading">
@@ -148,8 +171,8 @@
                     </div>
                 </div>
             </div>
-
-
+        
+        
             <div class="feture_card">
                 <div class="feture_content">
                     <div class="feture_card_img">
@@ -163,8 +186,8 @@
                     </div>
                 </div>
             </div>
-
-
+        
+        
             <div class="feture_card">
                 <div class="feture_content">
                     <div class="feture_card_img">
@@ -178,11 +201,11 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="feture_card">
                 <div class="feture_content">
                     <div class="feture_card_img">
-                        <img src="./img/icon/hospital.svg" alt="">
+                        <img src="./img/icon/team.png" alt="">
                     </div>
                     <div class="feture_card_texts">
                         <div class="feture_card_heading">
@@ -192,10 +215,22 @@
                     </div>
                 </div>
             </div>
-
+        
         </div>
 
-    </section>
+    </div>
+
+
+
+</section>
+
+
+<section class="about_section">
+    
+</section>
+
+
+
 
 
 
@@ -205,12 +240,18 @@
         UIkit.navbar(element, options);
     </script>
 
+
+<script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
     
     <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.1/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.1/dist/js/uikit-icons.min.js"></script>
 
-<script src="https://unpkg.com/lucide@latest"></script>
+
 
 
 </body>
