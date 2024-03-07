@@ -6,6 +6,77 @@ body
     padding: 0;
 }
 
+nav .logo
+{
+    width: 170px;
+}
+
+nav .logo a img
+{
+    mix-blend-mode: screen;
+}
+
+nav .logo p
+{
+    margin: 0;
+    padding: 2px 0;
+    text-align: start;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: clamp(8px, 0.6vw, 11px);
+}
+
+@-webkit-keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  nav .center_marquee {
+    margin: 0;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    text-transform: uppercase;
+    will-change: transform;
+    transform: translateX(0);
+    white-space: nowrap;
+    -webkit-animation: marquee 24s linear infinite;
+            animation: marquee 24s linear infinite;
+    font-weight: 500;
+  }
+
+  .header_right_card
+  {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .header_right_card .icon
+  {
+
+  }
+
+
+
+.header_right_card
+{
+
+}
+
 .hero_section
 {
     padding: 0;
@@ -38,7 +109,7 @@ body
     color: #fff;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(40px, 6vw, 60px);
+    font-size: clamp(36px, 6vw, 50px);
     
   font-optical-sizing: auto;
   font-weight: 800;
@@ -47,7 +118,7 @@ body
 .hero_left_side h2:not(:first-child)
 {
     color: #d4af37;
-    font-size: clamp(60px, 9.6vw, 74px);
+    font-size: clamp(56px, 3.7vw, 70px);
 }
 
 
@@ -63,3 +134,66 @@ body
     mask-image: url('./img/india_map.png');
     mask-repeat: no-repeat;
 }
+
+.featur_section
+{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feture_wraper
+{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feture_card
+{
+    width: 220px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.feture_content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.feture_card_img img
+{
+    width: 110px;
+}
+
+.feture_card_heading h2,
+.feture_card_heading p
+{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.feture_card_heading h2
+{
+    font-size: clamp(18px, 1.3vw, 26px);
+    font-weight: 700;
+}
+
+.feture_card_heading p
+{
+    font-size: clamp(12px, 1.1vw, 18px);
+    font-weight: 600;
+}
+
