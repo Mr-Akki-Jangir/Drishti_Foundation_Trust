@@ -156,9 +156,48 @@ nav .two_pics img:last-child
     padding: 6px 0 0 0;
 }
 
+
+
+
 .sticky_navbar
 {
     background: #011936;
+    padding: 0 20px;
+}
+
+.sticky_navbar .mobile_nav_button
+{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+.sticky_navbar .mobile_nav_button svg
+{
+    stroke: #f8f8f8;
+}
+
+.sticky_navbar .uk-navbar-left h2
+{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(16px, 1.2vw, 22px);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sticky_navbar .uk-navbar-left h2 span
+{
+
+    color: #E53D00;
+}
+
+.uk-sticky-fixed nav .uk-navbar-left h2
+{
+    color: #000;
 }
 
 .sticky_navbar .uk-container
@@ -392,4 +431,111 @@ nav .two_pics img:last-child
     height: 340px;
     border-top-right-radius: 32px;
     border-bottom-left-radius: 32px;
+}
+
+footer .footer_row:first-child
+{
+    background: #1d1d1d;
+}
+
+footer .footer_row:last-child
+{
+    background: #000;
+}
+
+.footer_row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+}
+
+.foooter_links_wraper
+{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer_logo h2,
+.footer_links ul > li > a,
+.copyright_txt p
+{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+} 
+
+
+
+.footer_logo h2
+{
+    font-size: clamp(26px, 1.7vw, 36px);
+    color: #f8f8f8;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.footer_logo h2:last-child
+{
+    color: #d4af37;
+}
+
+.footer_links ul
+{
+    list-style: none;
+}
+
+.footer_links ul > li > a 
+{
+    font-size: clamp(14px, 0.7vw, 20px);
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+.copyright_txt
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copyright_txt p
+{
+    color: #f8f8f8;
+    font-size: clamp(12px, 0.8vw, 26px);
+}
+
+
+@media (max-width: 766px) {
+
+    .uk-navbar
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .uk-navbar-right
+    {
+        display: none;
+    }
+
+    .sticky_navbar .mobile_nav_button
+    {
+        display: block;
+    }
+
+    nav .header_right_wraper
+    {
+        padding: 25px 0 0 0;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+
 }
