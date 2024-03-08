@@ -11,9 +11,10 @@ header
     background-color: #000;
 }
 
-header .uk-navbar-container
+header .uk-navbar-container,
+header .uk-container-expand
 {
-    background: #f4f4f4 !important;
+    background: #E53D00 !important;
 }
 
 
@@ -39,10 +40,12 @@ nav .header_right_wraper
     justify-content: center;
 }
 
-nav .uk-navbar-center
+/* header .uk-container-expand
 {
     overflow: hidden;
-}
+} */
+
+
 
 nav .header_right_wraper
 {
@@ -81,17 +84,22 @@ nav .two_pics img:last-child
       transform: translateX(-100%);
     }
   }
-  nav .center_marquee {
+
+
+  .uk-container-expand .center_marquee {
+    width: fit-content;
     margin: 0;
-    color: #000;
+    padding: 6px 0;
+    text-align: center;
+    color: #f8f8f8;
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-transform: uppercase;
-    will-change: transform;
-    transform: translateX(0);
+    /* will-change: transform;
+    transform: translateX(0); */
     white-space: nowrap;
-    -webkit-animation: marquee 24s linear infinite;
-            animation: marquee 24s linear infinite;
+    /* -webkit-animation: marquee 24s linear infinite;
+            animation: marquee 24s linear infinite; */
     font-weight: 500;
   }
 
@@ -119,13 +127,18 @@ nav .two_pics img:last-child
 
   }
 
+  .header_right_card .content .description a
+  {
+    text-decoration: none;
+    color: #f8f8f8;
+  }
 
 .header_right_card .content .title h3,
 .header_right_card .content .description p
 {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    color: #000;
+    color: #f8f8f8;
 }
 
 .header_right_card .content .title h3
@@ -134,12 +147,38 @@ nav .two_pics img:last-child
     font-weight: 600;
 }
 
+
 .header_right_card .content .description p
 {
     font-size: clamp(12px, 0.64vw, 16px);
-    color: #686868;
+    color: #f8f8f8;
     font-weight: 500;
     padding: 6px 0 0 0;
+}
+
+.sticky_navbar
+{
+    background: #011936;
+}
+
+.sticky_navbar .uk-container
+{
+    padding: 0;
+}
+
+.uk-navbar-nav>li>a
+{
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 1.22vw, 20px);
+    font-weight: 500;
+    text-transform: none;
+}
+
+.uk-navbar-nav>li.uk-active>a
+{
+    color: #E53D00 !important;
+    border-bottom: 2px solid #E53D00;
+    font-weight: 600;
 }
 
 
@@ -207,15 +246,14 @@ nav .two_pics img:last-child
 {
     width: 100%;
     padding: 60px 0;
+    background-image: url('./img/card_bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-image: fill 0 linear-gradient(#000, #0003);
 }
 
-.feture_container
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
-}
+
 
 .feture_title
 {
@@ -223,7 +261,9 @@ nav .two_pics img:last-child
 }
 
 .feture_title h2,
-.feture_sub_title p
+.feture_sub_title p,
+.about_title h2,
+.about_us_content p
 {
     color: #FCAB0D;
     font-family: "Inter", sans-serif;
@@ -238,25 +278,32 @@ nav .two_pics img:last-child
     font-size: clamp(26px, 1.7vw, 38px);
 }
 
-.feture_wraper
+.feture_container
 {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    flex-wrap: wrap;
+    grid-gap: 22px;
+    grid-template-columns: minmax(16rem, 1fr);
     justify-content: center;
+    padding: 30px 0;
 }
 
 .feture_card
 {
-    width: 270px;
-    height: 290px;
-    padding: 15px 20px;
+    width: 250px;
+    background: #fff;
+    padding: 12px 24px;
     border: 1px solid #ececec;
     border-top-right-radius: 32px;
     border-bottom-left-radius: 32px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.feture_card .uk-card-default
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
 }
 
 .feture_content
@@ -269,29 +316,80 @@ nav .two_pics img:last-child
 }
 
 
-.feture_card_img img
+.feture_card .uk-card-media-top img
 {
     height: 130px;
 }
 
-.feture_card_heading h2,
-.feture_card_heading p
+.feture_card .uk-card-body
+{
+    padding: 0;
+}
+
+.feture_card .uk-card-body h3,
+.feture_card .uk-card-body p
 {
     margin: 0;
     font-family: "Inter", sans-serif;
     text-align: center;
 }
 
-.feture_card_heading h2
+.feture_card .uk-card-body h3
 {
     font-size: clamp(22px, 1.2vw, 34px);
-    font-weight: 700;
+    font-weight: 800;
     padding: 14px;
 }
 
-.feture_card_heading p
+.feture_card .uk-card-body p
 {
     font-size: clamp(11px, 0.6vw, 18px);
     font-weight: 600;
 }
 
+.about_section
+{
+    padding: 30px 20px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1089%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(229%2c 61%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c588.351C109.69%2c587.415%2c150.271%2c436.411%2c239.121%2c372.08C320.895%2c312.871%2c446.899%2c314.462%2c498.293%2c227.563C550.206%2c139.786%2c510.437%2c29.462%2c501.85%2c-72.155C492.698%2c-180.467%2c516.332%2c-303.592%2c446.381%2c-386.791C376.329%2c-470.109%2c248.958%2c-461.716%2c145.601%2c-495.871C37.893%2c-531.464%2c-66.923%2c-629.892%2c-173.743%2c-591.716C-281.287%2c-553.281%2c-287.137%2c-399.917%2c-362.643%2c-314.232C-439.105%2c-227.461%2c-608.487%2c-204.05%2c-616.992%2c-88.71C-625.69%2c29.255%2c-473.549%2c90.29%2c-399.257%2c182.334C-345.885%2c248.459%2c-301.34%2c315.594%2c-241.759%2c376.184C-165.029%2c454.213%2c-109.431%2c589.285%2c0%2c588.351' fill='%23b73100'%3e%3c/path%3e%3cpath d='M1440 991.789C1519.141 977.982 1556.198 887.998 1617.186 835.707 1668.003 792.137 1728.252 763.481 1768.588 710.061 1817.0140000000001 645.928 1878.8899999999999 577.936 1872.3 497.845 1865.68 417.39599999999996 1791.162 362.38 1735.193 304.214 1681.939 248.86900000000003 1625.657 198.394 1555.058 168.14800000000002 1477.61 134.96800000000002 1392.634 99.632 1311.609 122.74000000000001 1230.438 145.89 1173.276 218.47199999999998 1128.253 289.87 1087.479 354.53 1072.686 430.352 1069.471 506.726 1066.497 577.371 1085.8519999999999 644.201 1110.55 710.455 1137 781.41 1160.478 856.1659999999999 1218.063 905.341 1279.686 957.9639999999999 1360.172 1005.716 1440 991.789' fill='%23ff5314'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1089'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about_section .uk-grid
+{
+    grid-gap: 30px;
+}
+
+.about_title
+{
+    padding: 30px 0;
+}
+
+.about_title h2
+{
+    font-weight: 800;
+    text-align: start;
+    font-size: clamp(36px, 2.9vw, 60px);
+}
+
+.about_us_content p
+{
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+    font-size: clamp(12px, 1.1vw, 18px);
+}
+
+.about_us_content p:not(:first-child)
+{
+    padding: 6px 0;
+}
+
+.about_us_img img
+{
+    height: 340px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+}

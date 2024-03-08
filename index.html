@@ -33,9 +33,7 @@
                                 
                             </div>
                         </div>
-                        <div class="uk-navbar-center">
-                            <p class="center_marquee">A Non-Profit Social Service Organization Which Follows The Path Of Budha</p>
-                        </div>
+
 
                         <div class="uk-navbar-right">
                             <div class="header_right_wraper">
@@ -83,31 +81,36 @@
                 </div>
             </nav>
         </div>
+
+        <div class="uk-container-expand">
+            <div class="center_marquee_wraper">
+                <marquee behavior="alternate" direction="left">
+
+                    <p class="center_marquee">A Non-Profit Social Service Organization Which Follows The Path Of Budha</p>
+                </marquee>
+
+            </div>
+        </div>
     </header>
 
     <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *;">
 
 
     
-        <nav class="uk-navbar-container uk-light">
+        <nav class="uk-navbar-container uk-light sticky_navbar">
             <div class="uk-container uk-container-expand">
                 <div uk-navbar>
 
                     <div class="uk-navbar-center">
 
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Item</a></li>
+                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li><a href="#">Trust</a></li>
+                            <li><a href="#">Organization</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Donors</a></li>
+                            <li><a href="#">Suggestions</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
 
                     </div>
@@ -152,72 +155,60 @@
         <h2>Make a Difference</h2>
     </div>
     <div class="feture_sub_title">
-        <p>Path to Enligtnment by helping others and making a better persons for better tommow</p>
+        <p>Embracing the teachings of Buddha to find peace and happiness in life.</p>
     </div>
 
-    <div class="feture_container">
-        <div class="feture_wraper">
-
-            <div class="feture_card">
-                <div class="feture_content">
-                    <div class="feture_card_img">
-                        <img src="./img/icon/no-poverty.svg" alt="">
-                    </div>
-                    <div class="feture_card_texts">
-                        <div class="feture_card_heading">
-                            <h2>Relief for Poverty</h2>
-                            <p>Providing essential resources and support to alleviate poverty-stricken communities, fostering sustainable development and empowerment.</p>
-                        </div>
-                    </div>
+    <div class="uk-child-width-1-4@m feture_container" uk-grid>
+        <div class="feture_card">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./img/icon/no-poverty.svg">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Relief for Poverty</h3>
+                    <p>Providing essential resources and support to alleviate poverty-stricken communities, fostering sustainable development and empowerment.</p>
                 </div>
             </div>
-        
-        
-            <div class="feture_card">
-                <div class="feture_content">
-                    <div class="feture_card_img">
-                        <img src="./img/icon/books.svg" alt="">
-                    </div>
-                    <div class="feture_card_texts">
-                        <div class="feture_card_heading">
-                            <h2>Education Initiatives</h2>
-                            <p>Implementing educational programs aimed at enhancing knowledge, skills, and opportunities for underprivileged individuals, paving the way for a brighter future.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        
-            <div class="feture_card">
-                <div class="feture_content">
-                    <div class="feture_card_img">
-                        <img src="./img/icon/hospital.svg" alt="">
-                    </div>
-                    <div class="feture_card_texts">
-                        <div class="feture_card_heading">
-                            <h2>Medical Facilities</h2>
-                            <p>Ensuring access to quality healthcare services, promoting well-being and addressing healthcare disparities within vulnerable populations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="feture_card">
-                <div class="feture_content">
-                    <div class="feture_card_img">
-                        <img src="./img/icon/team.png" alt="">
-                    </div>
-                    <div class="feture_card_texts">
-                        <div class="feture_card_heading">
-                            <h2>Civil Society Reformation</h2>
-                            <p>Advocating for societal progress through the adoption of scientific and modern principles, fostering a culture of inclusivity, equity, and progress.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
         </div>
 
+        <div class="feture_card">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./img/icon/books.svg">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Education Initiatives</h3>
+                    <p>Implementing educational programs aimed at enhancing knowledge, skills, and opportunities for underprivileged individuals, paving the way for a brighter future.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feture_card">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./img/icon/hospital.svg">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Medical Facilities</h3>
+                    <p>Ensuring access to quality healthcare services, promoting well-being and addressing healthcare disparities within vulnerable populations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feture_card">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./img/icon/team.png">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Civil Society Reformation</h3>
+                    <p>Advocating for societal progress through the adoption of scientific and modern principles, fostering a culture of inclusivity, equity, and progress.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        
     </div>
 
 
@@ -226,7 +217,48 @@
 
 
 <section class="about_section">
-    
+
+    <div class="about_title">
+        <h2>About Us</h2>
+    </div>
+
+    <div uk-grid>
+
+        <div class="about_us_content uk-width-expand@l">
+            <p>Buddh vihar within the sand dunes and foot hill of a small village  
+                Jaipahari has been constructed in Shekhawati, which is recognized for struggle of life in  desert zone of Rajasthan. 
+               </p>
+
+               <p>This area is recognized famous for business families who played a remarkable role in  providing education to all.Shekhawati is a fertile land for developing new thought process  and social order. </p>
+
+               <p>Inspired by Ambedkarism and Budhism,a son of soil Prof. Onkar Mal settled in  gurgon/Gurugram erminated a thought for building , a Buddh vihar on a land piece donated  by his elder brother Mistry sh. Mali ram ,being a Arya samaji </p>
+
+               <p>The entire financial input from Prof. Onkar Mal which had been earned through his  motivational/educational lectures given by him in various universities and renowned  institutes of higher learning.  </p>
+
+               <p>Sh. Mali Ram BITSIAN provided all technical support in terms of drawings, architecture,  beautiful front View of the vihar , front main gate design giving a look for Buddhism ideology.</p>
+
+               <p>After leveling of land the foundation stone was laid 0n 14th April 2021 and construction was  started. 
+                The vihar building was completed in all respect by end of Nov`2022 through the effective  leadership and monitoring/supervision and timely funds flow from prof. Onkar Mal .
+                </p>
+
+                <p>The idea of forming a trust existed ever earlier in life time of Master Raghuvir Prasad, who  was a great social worker in the field of education and community reformative activities  
+                    KR Buddh prabodhan vihar trust jaipahari was therefore born and registered on 22-07-2021.  
+                    Buddh vihar was opened and inaugurated by Hon`ble Rajendra Pal Gautam cabinet minister  of Delhi NCR region on 5th Dec 2021  
+                    </p>
+
+                    <p>The immovable property in the form of vihar building costing Rs 25,60,500/- had been  transferred to Trust in the Trustees board meeting held on on 30.11.2022 with unanimous  decision.  
+                        The digital library having literature of big thinkers and computers and TV and other logistics  are transferred for public use.
+                        </p>
+        </div>
+
+        <div class="about_us_img uk-width-auto@m">
+
+            <img src="./img/Photo Buddh Vihar Jaipahari.jpg" alt="">
+
+        </div>
+
+    </div>
+
 </section>
 
 
