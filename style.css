@@ -157,6 +157,57 @@ nav .two_pics img:last-child
 }
 
 
+#modal_donate .uk-modal-dialog
+{
+    padding: 20px 40px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 22px;
+}
+
+#modal_donate h2
+{
+    margin: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(18px, 1.2vw, 26px);
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+#modal_donate .qr_wraper
+{
+    padding: 0 60px;
+
+}
+
+#modal_donate .qr_wraper img
+{
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 22px;
+}
+
+#modal_donate .modal_close_btn_wraper
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+
+#modal_donate .modal_close_btn_wraper .btn_modal_donate_close
+{
+    position: relative;
+    width: 80%;
+    right: 0;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+
 
 
 .sticky_navbar
@@ -182,7 +233,7 @@ nav .two_pics img:last-child
 .sticky_navbar .uk-navbar-left h2
 {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: clamp(16px, 1.2vw, 22px);
     text-transform: uppercase;
@@ -413,7 +464,8 @@ nav .two_pics img:last-child
     font-size: clamp(36px, 2.9vw, 60px);
 }
 
-.about_us_content p
+.about_us_content p,
+.turst_texts p
 {
     color: #fff;
     font-weight: 400;
@@ -421,7 +473,13 @@ nav .two_pics img:last-child
     font-size: clamp(12px, 1.1vw, 18px);
 }
 
-.about_us_content p:not(:first-child)
+.turst_texts p
+{
+    color: #1d1d1d;
+}
+
+.about_us_content p:not(:first-child),
+.turst_texts p:not(:first-child)
 {
     padding: 6px 0;
 }
@@ -460,7 +518,12 @@ footer .footer_row:last-child
     gap: 32px;
 }
 
-.footer_logo h2,
+.footer_logo h2
+{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
 .footer_links ul > li > a,
 .copyright_txt p
 {
@@ -508,6 +571,92 @@ footer .footer_row:last-child
 {
     color: #f8f8f8;
     font-size: clamp(12px, 0.8vw, 26px);
+}
+
+.trust_content_container,
+.gallery_container
+{
+    padding: 50px 150px;
+}
+
+.turst_texts
+{
+    padding: 25px 0;
+}
+
+.truties_card_wraper
+{
+    padding: 25px 0;
+}
+
+.truties_info_container
+{
+    grid-gap: 22px;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.trustie_card
+{
+    width: 310px;
+}
+
+.trustie_card .uk-card
+{
+    box-shadow: none;
+}
+
+.trustie_card .uk-card .uk-card-media-top img
+{
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.trustie_card .uk-card .uk-card-body
+{
+    padding: 16px;
+}
+
+.trustie_card .uk-card .uk-card-body .trustie_designation
+{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 0.7vw, 20px);
+    color: #4d4d4d;
+    font-weight: 600;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+
+.trustie_title
+{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(18px, 0.9vw, 26px);
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.trustie_contact
+{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: clamp(14px, 0.7vw, 18px);
+    color: #011936;
+}
+
+
+
+.trustie_contact svg
+{
+    fill: #011936;
+    stroke: none;
+    width: 30px;
+    padding: 0 12px 0 0;
 }
 
 
